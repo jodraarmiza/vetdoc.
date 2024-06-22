@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>VetDoct</title>
+  </head>
+  <body>
+    
+        
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/logo.png"
+            alt="Bootstrap"
+            width="44"
+            height="41"
+          />
+        </a>
+        <span class="fs-3 fw-semibold">VetDoct</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+            <button
+              type="button"
+              class="loginbutton"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </li>
+            <!-- Start of Login -->
+            <form
+              action="send.php"
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div
+                  class="modal-content border border-2 border-warning py-3 px-5"
+                >
+                  <div class="container-fluid d-flex justify-content-center">
+                    <img
+                      src="assets/logo.png"
+                      alt=""
+                      width="44"
+                      height="41"
+                    />
+                  </div>
+                  <div class="modal-body row gap-3">
+                    <div class="d-flex justify-content-center">
+                      <h1
+                        class="modal-title fs-3 fw-bold text-center"
+                        id="exampleModalLabel"
+                      >
+                        Masukan nomor HP kamu!
+                      </h1>
+                    </div>
+                    <form>
+                      <div class="">
+                        <label
+                          for="phoneNumber"
+                          class="form-label justify-content-center text-center"
+                          ><span class="fw-semibold"
+                            >Masukan nomor ponsel kamu</span
+                          >
+                          untuk masuk ke VetDoct atau mebuat akun baru!</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control border-2"
+                          id="phoneNumber"
+                          aria-describedby="emailHelp"
+                          placeholder="Nomor Ponsel"
+                        />
+                      </div>
+                    </form>
+                    <div class="modal-body d-flex justify-content-center">
+                      <button type="lanjut" class="container-fluid bg-warning p-2 d-flex justify-content-center rounded border-0">
+                        <span class="text-light fw-medium">Lanjut</span>
+                      </button>
+                    </div>
+                    <div class="container-fluid">
+                      <p class="text-center fw-light">
+                        Dengan masuk atau mendaftar, saya menyetujui
+                        <a
+                          href=""
+                          class="text-primary text-decoration-underline"
+                          >Ketentuan Penggunaan VetDoctor</a
+                        >
+                        dan
+                        <a
+                          href=""
+                          class="text-primary text-decoration-underline"
+                          >Kebijakan Privasi VetcDoctor</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- End of Login -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!--isi-->
+    
+    <!---->
+
+    <!-- Hero Section-->
+    <div class="jumbotron bg-image position-relative">
+      <div class="container position-relative">
+        <h1
+          class="fs-1"
+          style="
+            color: #000;
+            margin-top: 0px;
+            margin-left: 0px;;
+            font-size: larger;
+            position: relative;
+            padding-top: 160px;
+          "
+        >
+          Solusi Kesehatan Anabul!
+        </h1>
+        <h3
+        style="
+            color: #000;
+            margin-top: 20px;
+            margin-left: 0px;
+            font-size: medium;
+            position: relative;
+            text-align: left;
+            " 
+        >
+        Konsul dokter, beli vitamin dan obat, cek lab, janji rumah sakit, dan edukasi tentang anabul,<br> semua bisa di Vetdoct
+        </h3>
+        <div class="hero-buttons" style="margin-top: -30px;">
+          <a href="konsulpage.html" class="btn btn-warning" role="button">Konsultasi dengan Dokter</a>
+          <button href="#" type="button" class="btn btn-warning">Toko Kesehatan</button>
+          <button href="#" type="button" class="btn btn-warning">Buat Janji RS</button>
+          <button href="#" type="button" class="btn btn-warning">Janji Medis</button>
+          <button href="#" type="button" class="btn btn-warning">Home Lab & Vaksinasi</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--isi -->
+  <div class="container p-4">
+    <div class="container d-flex justify-content-start">
+      <h2 class="fw-bolder" style="padding-left: 40px; font-size: 40px;">Layanan Kami</h2>
+    </div>
+    <div class="container d-flex justify-content-start p-4 gap-5">
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/kesehatan kulit.svg" alt="" s /></div>
+        <p class="fw-medium">
+          Kesehatan <br />
+          Kulit
+        </p>
+      </button>
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/homelabvaksin.svg" alt="" s /></div>
+        <p class="fw-medium">
+          Homelab <br />
+          Vaksin
+        </p>
+      </button>
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/vetclinic.svg" alt="" s /></div>
+        <p class="fw-medium">Vet Clinic</p>
+      </button>
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/kesehatan mental.svg" alt="" s /></div>
+        <p class="fw-medium">
+          Kesehatan <br />
+          Mental
+        </p>
+      </button>
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/janji onsite.svg" alt="" s /></div>
+        <p class="fw-medium">
+          Janji <br />
+          Onsite
+        </p>
+      </button>
+      <button class="btn d-flex flex-column align-items-center gap-3">
+        <div><img src="assets/donasi.svg" alt="" s /></div>
+        <p class="fw-medium">Donasi</p>
+      </button>
+    </div>
+  </div>
+    <!---->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="pics/Anjing1.jpeg"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="pics/Anjing2.jpeg"
+                class="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="pics/Anjing3.jpeg"
+                class="d-block w-100"
+                alt="Slide 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="pics/Anjing4.jpeg"
+                class="d-block w-100"
+                alt="Slide 4"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="pics/anjing 3.jpeg"
+                class="d-block w-100"
+                alt="Slide 5"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="pics/Anjing6.jpeg"
+                class="d-block w-100"
+                alt="Slide 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--  -->
+
+    <!-- Carousel 2 -->
+    <div class="btn-container">
+      <p class="read-article">Artikel Anabul</p>
+      <button type="button" class="btn btn-outline-warning">Terbaru</button>
+      <button type="button" class="btn btn-outline-warning">Populer</button>
+      <button type="button" class="btn btn-outline-warning">Kesehatan</button>
+      <button type="button" class="btn btn-outline-warning">Obat</button>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="pics/istockphoto-1303362255-612x612.jpg" alt="Card 1" />
+        <div class="card-content">
+          <h3>Operasi Anabul</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corporis quis eaque voluptatum nesciunt dolorum tempore, ipsa non sed accusantium labore pariatur tenetur? Illo explicabo veniam impedit facere ullam earum?</p>
+          <a href="https://www.halodoc.com/kesehatan/kesehatan-hewan" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pics/istockphoto-1353103116-612x612.jpg" alt="Card 2" />
+        <div class="card-content">
+          <h3>Perawatan Anabul</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem vero sapiente ut fugiat natus odit veritatis tempore accusamus ex tempora dicta ratione iure sit pariatur, possimus perspiciatis at nobis cum.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pics/card3.jpg" alt="Card 3" />
+        <div class="card-content">
+          <h3>Konsultasi Anabul</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, id delectus asperiores dignissimos dolores fugiat minima quisquam, eveniet saepe ipsum architecto pariatur expedita numquam quod odio illo libero nihil voluptates.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pics/Card 4.jpg" alt="Card 4 " />
+        <div class="card-content">
+          <h3>Pengobatan Anabul</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum omnis ducimus dolor. Totam omnis porro ut aliquam fuga at corporis cupiditate illo animi est eum optio, neque, voluptatum perspiciatis expedita!</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+    <!-- obat dan vitamin -->
+      <div class="obat-vitamin">
+        <p class="judulobatvitamin">Obat & vitamin</p>
+        <p class="textobatvitamin">Dapatkan informasi seputar aturan, petunjuk penggunaan obat dan vitamin di sini!</p>
+        <div class="button-container"></div>
+        <button type ="button" class =" button-kesehatan-kulit">
+          <img src="assets/obatvitamin1.png" alt="button image">
+          kesehatan-kulit</button>
+          <button type ="button" class ="button-kesehatan-kulit">
+            <img src="assets/obatvitamin1.png" alt="button image">
+            Kesehatan pencernaan</button>
+            <button type ="button" class ="button-kesehatan-kulit">
+              <img src="assets/obatvitamin1.png" alt="button image">
+              Kesehatan pencernaan</button>
+              <button type ="button" class ="button-lihat-semua">
+                Lihat Semua</button>
+      </div>
+   <!-- Footer -->
+   <footer>
+    <div class="container-fluid d-flex justify-content-around p-5" style="background-color: #fbbc05">
+      <div class="d-flex flex-column align-items-center">
+        <img src="assets/Footer_logo.png" alt="">
+      </div>
+  
+      <div class="">
+        <h3 class="text-light">Site map</h3>
+  
+        <div class="d-flex m-0 p-0">
+          <div class="container d-flex flex-column m-0 p-0">
+            <a href="" class="text-decoration-none text-light">Store</a>
+            <a href="" class="text-decoration-none text-light">Profile</a>
+            <a href="" class="text-decoration-none text-light">Home</a>
+            <a href="" class="text-decoration-none text-light">Doctor</a>
+            <a href="" class="text-decoration-none text-light">Promo</a>
+          </div>
+          <div class="container d-flex flex-column m-0 p-0">
+            <a href="" class="text-decoration-none text-light">Karir</a>
+            <a href="" class="text-decoration-none text-light">Media</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="">
+        <h3 class="text-light" style="padding-left: 30px;">Follow kami di:</h3>
+        <ul class="d-flex gap-4" style="list-style-type: none;">
+          <img src="assets/youtube.svg" width="50" height="40" alt="">
+          <img src="assets/instagram.svg" width="40" height="40" alt="">
+          <img src="assets/facebook.svg" width="40" height="40" alt="">
+          <img src="assets/twitter-x.svg" width="50" height="50" alt="">
+        </ul>
+      </div>
+    </div>
+  
+  
+    <div class="d-flex justify-content-center p-2" style="background: FBBC05">
+      <span class="text-light">All rights reserved. &copy; 20234 VetDoctor.ID</span>
+    </div>
+  
+  </footer>
+
+
+    <!--Link Java-->
+    <script src="script.js"></script>
+    <!---->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

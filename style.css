@@ -1,0 +1,286 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.jumbotron {
+  background-image: url("assets/Yellow\ Minimalist\ Pet\ Shop\ Site\ Banner\ \(1\).png");
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+}
+
+.container h1 {
+  margin-top: 42%;
+  margin-left: 10%;
+  font-size: 100px;
+  padding-top:80px;
+}
+
+
+.carousel-item{
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  
+}
+
+.carousel-item btn{
+background-color: grey;
+}
+
+.btn-container {
+display: flex;
+justify-content: flex-start;
+position: relative;
+margin-left: 50px;
+margin-top: 50px;
+}
+
+.read-article {
+position: absolute;
+top: -30px; /* Adjust this value to move the text up or down */
+font-size: 40px; /* Adjust the font size as needed */
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+}
+
+.btn-container {
+text-align: center;
+margin-top: 20px;
+}
+
+.btn {
+margin-right: 5px;
+margin-top: 50px;
+padding: 10px 20px;
+background-color: #ffc107;
+border: none;
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+.btn:hover {
+background-color: #e0a800;
+}
+
+.card-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 10px;
+}
+
+.card {
+width: 325px;
+background-color: #f0f0f0;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: 20px;
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card-content {
+padding: 16px;
+}
+
+.card-content h3 {
+font-size: 24px;
+margin-bottom: 8px;
+}
+
+.card-content p {
+color: #666;
+font-size: 15px;
+line-height: 1.5;
+}
+
+.card-content .btn {
+display: inline-block;
+padding: 8px 16px;
+background-color: #FFA500;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color: #fff;
+transition: background-color 0.3s;
+}
+
+.card-content .btn:hover {
+background-color: #e59400;
+}
+.judulobatvitamin{
+position: relative;
+top: -30px; 
+font-size: 40px; 
+margin-top: 50px;
+margin-left: 40px;
+padding-left: 10px;
+}
+.textobatvitamin{
+position: relative;
+top: -70px; 
+font-size: 20px; 
+margin-top: 50px;
+margin-left: 40px;
+padding-left: 10px;
+}
+.button-container {
+
+text-align: center;
+margin-top: -100px;
+}
+.button-kesehatan-kulit{
+width: 325px;
+padding: 8px 16px;
+background-color: #ffffff;
+border-radius: 4px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: 30px;
+border: solid transparent;
+text-align: center;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+margin-left: 50px;
+}
+.button-kesehatan-kulit:hover{
+border: 2px solid #FFA500; /* Set the border width, style, and color */
+
+}
+.button-kesehatan-kulit img{
+margin-right: 20px;
+}
+.button-lihat-semua {
+width: 325px;
+height: 70px;
+padding: 8px 16px;
+background-color: #ffffff;
+border-radius: 4px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+/* margin: 30px; */
+border: 3px solid #FFA500; /* Set the border width, style, and color */
+outline: none; /* Remove the outline when the button is focused */
+color: #FFA500;
+transition: background-color 0.3s;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+.button-lihat-semua:hover{
+background-color: #FFA500;
+color: #000;
+}
+
+/*  */
+footer{
+background: orange;
+width: 100%;
+position: relative;
+bottom: 0;
+
+}
+.footer-container{
+width: 1140px;
+margin: auto;
+display: flex;
+justify-content: center;
+}
+.footer-content{
+width: 33.3%;
+}
+.footer-text{
+font-size: 28px;
+margin-bottom: 15px;
+text-align: center;
+}
+.footer-content p{
+width:300px;
+margin: auto;
+padding:4px;
+}
+.footer-content ul{
+text-align: center;
+}
+.list{
+padding: 0;
+}
+.list li{
+width: auto;
+text-align: center;
+list-style-type:none;
+padding: 7px;
+position: relative;
+}
+.list li::before{
+content: '';
+position: relative;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 100%;
+width: 0;
+height: 2px;
+background: rgb(0, 187, 255);
+transition-duration: .5s;
+}
+.list li:hover::before{
+width: 70px;
+}
+.social-icons{
+text-align: center;
+padding: 0;
+}
+.social-icons li{
+display: inline-block;
+text-align: center;
+padding: 5px;
+}
+.social-icons i{
+color: white;
+font-size: 25px;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+color: rgb(0, 187, 255);
+}
+.social-icons i:hover{
+color: rgb(0, 187, 255);
+}
+.bottom-bar{
+background: black;
+text-align: center;
+padding: 10px 0;
+margin-top: 50px;
+}
+.bottom-bar p{
+color: white;
+margin: 0;
+font-size: 16px;
+padding: 7px;
+}
+.loginbutton {
+margin-right: 5px;
+padding: 10px 20px;
+background-color: #ffc107;
+border: none;
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}

@@ -1,0 +1,167 @@
+* {
+    font-family: "Poppins", sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+/* In new-page.css */
+/* konsul-page.css */
+/* konsul-page.css */
+.breadcrumb {
+    background-color: #000000; /* Light background color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    color: #000000 !important; /* Separator color */
+    padding: 0 3px !important; /* Space around separator */
+    font-family: sans-serif ;
+}
+
+.breadcrumb-item a {
+    color: #fab51e !important; /* Link color */
+    text-decoration: none !important;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline !important; /* Underline on hover */
+}
+
+.breadcrumb-item.active {
+    color: #000000 !important; /* Active item color */
+}
+.card-container, .card-container-invoice, .card-container-promo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card, .card-invoice, .card-promo {
+    position: relative;
+    width: 1000px; /* Adjusted for a reasonable width */
+    padding: 20px;
+    background: white;
+    border-radius: 20px; /* Ensure border radius is the same */
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-invoice, .card-promo {
+    width: 1000px; /* Keeping it wide as per your requirement */
+}
+
+.content, .content-invoice, .content-promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgbox {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail1 {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.detail2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.biayasesi, .hargasesi, .biayalayanan, .hargalayanan {
+    font-size: 14px;
+}
+
+.biayasesi, .biayalayanan {
+    color: #555;
+}
+
+.hargasesi, .hargalayanan {
+    color: #333;
+    font-weight: bold;
+}
+.totalpembayaran{
+    color: #fab51e;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.promo-detail {
+    text-align: left;
+}
+
+.promo-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.promo-code-input {
+    flex: 0 0 200px; /* Set a fixed width for the input field */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.promo-button {
+    padding: 10px 20px;
+    background-color: #fab51e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.promo-button:hover {
+    background-color: #ec971f;
+}
+
+.promo-bayar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bayar-button {
+    padding: 20px 40px; /* Making the button bigger */
+    background-color: #fab51e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bayar-button:hover {
+    background-color: #ec971f;
+}

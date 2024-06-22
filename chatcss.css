@@ -1,0 +1,131 @@
+* {
+    font-family: "Poppins", sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+/* In new-page.css */
+/* konsul-page.css */
+/* konsul-page.css */
+.breadcrumb {
+    background-color: #000000; /* Light background color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    color: #000000 !important; /* Separator color */
+    padding: 0 3px !important; /* Space around separator */
+    font-family: sans-serif ;
+}
+
+.breadcrumb-item a {
+    color: #fab51e !important; /* Link color */
+    text-decoration: none !important;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline !important; /* Underline on hover */
+}
+
+.breadcrumb-item.active {
+    color: #000000 !important; /* Active item color */
+}
+
+.chat-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 70%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #fab51e;
+    color: white;
+    text-align: center;
+}
+
+
+.chat-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-card {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-card .message {
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+}
+
+.message-card.receiver .message {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.message-card.sender {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.message-card.sender .message {
+    background-color: #ec971f;
+    color: white;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#chatInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fab51e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #ec971f;
+}

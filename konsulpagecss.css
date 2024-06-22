@@ -1,0 +1,236 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* In new-page.css */
+/* konsul-page.css */
+/* konsul-page.css */
+.breadcrumb {
+  background-color: #000000; /* Light background color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+  color: #000000 !important; /* Separator color */
+  padding: 0 3px !important; /* Space around separator */
+  font-family: sans-serif ;
+}
+
+.breadcrumb-item a {
+  color: #fab51e !important; /* Link color */
+  text-decoration: none !important;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline !important; /* Underline on hover */
+}
+
+.breadcrumb-item.active {
+  color: #000000 !important; /* Active item color */
+}
+/* konsul-page.css */
+.search-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Space from the top */
+}
+
+.search-bar {
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px; /* Maximum width for the search bar */
+  
+}
+
+.search-bar input[type="search"] {
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the input */
+  border: 1px solid #ced4da; /* Border color */
+}
+
+.search-bar button[type="submit"] {
+  margin-left: 10px; /* Space between input and button */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+}
+/* Custom CSS for Bootstrap cards */
+
+/* .card {
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  transition: box-shadow 0.3s; 
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-img-top {
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+}
+
+.card-title {
+  font-size: 1.2rem; 
+}
+
+.card-text {
+  font-size: 1rem; 
+} */
+
+/* Card */
+.card-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 10px;
+gap: 20px;
+}
+
+.card{
+position: relative;
+width: 400px;
+height: 150px;
+background: white;
+backdrop-filter: blur(10px);
+border-radius: 20px;
+box-shadow:0 25px 25px rgba(0, 0, 0, 0.1);
+border-color: white;
+overflow: hidden;
+}
+
+.imgbox {
+padding: 30px;
+}
+
+.detail{
+text-align: left;
+padding-left: 30px;
+}
+
+.detail2{
+text-align: left;
+padding-left: 30px;
+}
+.star-container{
+padding-bottom: 10px;
+padding-left: 30px;
+
+}
+.starstyle{
+color: #fab51e;
+}
+.chatbutton{
+display: inline-block;
+padding: 8px 16px;
+background-color: #FFA500;
+text-decoration: none;
+border-radius: 4px;
+color: #fff;
+transition: background-color 0.3s;
+margin: 20px;
+}
+.chatbutton:hover {
+background-color: #e59400;
+color: #000000;
+}
+
+
+/* Footer Konsul page */
+
+footer{
+  background: orange;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
+}
+.footer-container{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content{
+  width: 33.3%;
+}
+.footer-text{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width:300px;
+  margin: auto;
+  padding:4px;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list{
+  padding: 0;
+}
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+}
+.list li::before{
+  content: '';
+  position: relative;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 187, 255);
+  transition-duration: .5s;
+}
+.list li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(0, 187, 255);
+}
+.social-icons i:hover{
+  color: rgb(0, 187, 255);
+}
+.bottom-bar{
+  background: black;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.bottom-bar p{
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
+
+
+
+
